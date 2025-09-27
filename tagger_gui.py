@@ -101,6 +101,15 @@ root.title("VIT Data Retriever")
 root.geometry("520x540")
 root.configure(bg="#e60000")  # Vodafone red
 
+# # Load and display logo (scaled to match font size)
+# try:
+#     logo = tk.PhotoImage(file="logo.png")
+#     logo_label = tk.Label(root, image=logo, bg="#e60000")
+#     logo_label.image = logo  # Prevent garbage collection
+#     logo_label.pack(pady=(10, 0))
+# except Exception as e:
+#     print("Logo not found or invalid format:", e)
+
 # Container frame
 container = tk.Frame(root, bg="white", bd=2, relief="groove")
 container.pack(pady=20, padx=20, fill="both", expand=True)
